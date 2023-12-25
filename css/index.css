@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --main-color: #000;
+    --second-color: #f1f1f1;
+    --third-color: #fff;
+    --header-hover-color: #ccc;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+
+
+
+.container {
+    padding: 0 16px;
+    max-width: 1500px;
+}
+
+main {
+    flex: 1;
+}
+
+.main__projects {
+    padding: 8px 0;
+}
+footer {
+    height: 85px;
+    background-color: var(--main-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.footer__box p{
+    color: var(--third-color);
+    font-size: 15px;
+    margin-right: 5px;
+}
+.footer__box a {
+    color: var(--third-color);
+    font-size: 15px;
+    text-decoration: underline;
+}
+.footer__box {
+    display: flex;
+}
+header {
+    height: 54px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background: var(--third-color);
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.header__button {
+    padding: 8px 16px;
+    color: var(--main-color);
+    letter-spacing: 3px;
+}
+
+.header__button:hover {
+    background: var(--header-hover-color);
+}
+
+.header__button b {
+    letter-spacing: 5px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.main__photo-box {
+    max-width: 100%;
+
+}
+
+.main__photo,
+.main__card-photo {
+    width: 100%;
+    height: auto;
+}
+
+.main__card-photo {
+    filter: saturate(16%);
+}
+
+.main__card {
+    margin: 0 0 16px 0;
+}
+
+.main__hous-box-photo {
+    max-width: 100%;
+    position: relative;
+    margin: 0 0 16px 0;
+}
+
+.house {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.main__photo-box {
+    position: relative;
+}
+
+.main__logo-text {
+    color: var(--third-color);
+}
+
+.main__projects-box {
+    padding: 32px 16px;
+}
+
+.main__projects-title {
+    margin: 10px 0;
+    padding: 16px 0;
+    font-size: 36px;
+    border-bottom: 1px solid var(--second-color);
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+
+}
+
+.main__hous-box {
+    padding: 0 8px;
+}
+
+.hous-box-photo__name {
+    padding: 8px 16px;
+    background-color: var(--main-color);
+    color: var(--third-color);
+    font-size: 15px;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+}
+
+.main__logo-title,
+.main__logo-title b {
+    font-size: 36px;
+}
+
+.br {
+    font-weight: 900;
+    padding: 8px 16px;
+    background-color: var(--main-color);
+    color: var(--third-color);
+}
+
+.b-architects {
+    display: none;
+}
+
+.main__logo-title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--third-color);
+}
+
+.main__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__item {
+    padding: 8px 16px;
+}
+
+.header__item:hover {
+    background-color: var(--header-hover-color);
+}
+
+.header__link {
+    color: var(--main-color);
+}
+
+.main__about-title {
+    margin: 10px 0;
+    padding: 16px 0;
+
+    font-size: 36px;
+    border-bottom: 1px solid var(--second-color);
+    font-family: 'Teko', sans-serif;
+}
+
+.main__about-text {
+    margin: 15px 0;
+}
+
+.main__about {
+    padding: 32px 16px;
+}
+
+.main__cards,
+.main__card {
+    padding: 0 8px;
+}
+
+.main__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__name {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.card__prof {
+    opacity: 0.60;
+    margin: 15px 0;
+}
+
+.card__text {
+    margin: 15px 0;
+}
+
+.main__card-btn {
+    padding: 8px 16px;
+    border: none;
+    font-size: 15px;
+    margin: 1em 0;
+}
+
+.main__card-btn:hover {
+    background-color: var(--header-hover-color);
+}
+
+.main__contacts,.main__contacts-form {
+    display: flex;
+    flex-direction: column;
+}
+.main__contacts-title {
+    margin: 10px 0;
+    padding: 16px 0;
+    font-size: 24px;
+    border-bottom: 1px solid var(--second-color);
+    font-family: 'Teko', sans-serif;
+    font-size: 36px;
+}
+.main__contacts {
+    padding: 32px 16px;
+}
+.main__contacts-text {
+    font-size: 15px;
+    margin: 15px 0;
+}
+.main__contacts-input {
+    padding: 8px;
+}
+.main__contacts-input:not(:first-child) {
+    margin: 16px 0;
+}
+.main__contacts-button {
+    width: fit-content;
+    margin: 16px 0;
+    padding: 8px 16px;
+    border: none;
+    background: var(--main-color);
+    color: var(--third-color);
+    font-size: 15px;
+}
+.main__contacts-button:hover {
+    background-color: var(--header-hover-color);
+    color: var(--main-color);
+}
+.main__contacts-photo {
+    width: 100%;
+    height: auto;
+}
+.main__contacts-photo-box {
+    padding: 0 16px;
+    padding-bottom: 8px;
+}
+/* ... media ... */
+@media(min-width:600px) {
+    .b-architects {
+        display: flex;
+    }
+
+    .main__hous-box {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .main__cards {
+        display: flex;
+    }
+
+    .cadrs1,
+    .cadrs2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media(min-width:1000px) {
+
+    .main__hous-box {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+    }
+
+    .main__hous-box-photo {
+        margin: 0;
+    }
+
+    .cadrs1,
+    .cards2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main__cards {
+        display: flex;
+    }
+    .main__hous-box1,.main__hous-box2 {
+        display: flex;
+        gap: 16px;
+    }
+
+}
+
+@media(max-width:600px) {
+    .header__nav {
+        display: none;
+    }
+
+}
